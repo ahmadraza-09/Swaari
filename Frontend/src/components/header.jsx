@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from "react-router-dom";
 import '../css/header.css';
 
 const Header = () => {
+
+    const navigate = useNavigate();
 
     const [showDropdown, setShowDropdown] = useState(false);
     const accountRef = useRef(null);
@@ -31,12 +34,12 @@ const Header = () => {
             </h2>
 
             <div className="menu">
-                <li>Home</li>
-                <li>Ride</li>
-                <li>Drive</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li onClick={() => {navigate('/')}}>Home</li>
+                <li onClick={() => {navigate('/ride')}}>Ride</li>
+                <li onClick={() => {navigate('/drive')}}>Drive</li>
+                <li onClick={() => {navigate('/about')}}>About</li>
+                <li onClick={() => {navigate('/blog')}}>Blog</li>
+                <li onClick={() => {navigate('/contact')}}>Contact</li>
             </div>
 
             <div className="header-right">
@@ -51,8 +54,8 @@ const Header = () => {
                     {showDropdown && (
                         <div className="account-dropdown">
                             <ul>
-                                <li>Signup</li>
-                                <li>Login</li>
+                                <li onClick={() => {navigate('/login')}}>Signup</li>
+                                <li onClick={() => {navigate('/login')}}>Login</li>
                                 <hr />
                                 <li>Swaari your home</li>
                                 <li>Help Centre</li>

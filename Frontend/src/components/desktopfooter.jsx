@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const DesktopFooter = () => {
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
   return (
     <>
