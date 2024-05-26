@@ -161,6 +161,10 @@
 /* 320px and 628 */
 @media (min-width: 320px) and (max-width: 628px) {
 
+    .header {
+        /* display: none; */
+    }
+
     .header .logo {
         font-size: 30px;
     }
