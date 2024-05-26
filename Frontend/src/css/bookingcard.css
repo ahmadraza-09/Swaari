@@ -1,0 +1,110 @@
+.booking-card {
+    max-width: 900px;
+    height: 150px;
+    background-color: #fff;
+    /* border: 1px solid #000; */
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.booking-card form {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-card-section {
+    height: 100%;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    /* border: 1px solid #000; */
+}
+
+.booking-card-section:hover {
+    background-color: #e2e8f0;
+}
+
+.date {
+    width: 150px;
+}
+
+.booking-card-button {
+    width: 120px;
+    margin-left: 40px;
+}
+
+.booking-card-button button {
+    width: 100%;
+    height: 40px;
+    background-color: #ffb803;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.booking-card-section label {
+    font-size: 12px;
+}
+
+.booking-card-section input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+/* Responsive */
+/* 628px and 768px */
+@media (min-width: 628px) and (max-width: 768px) {
+    .booking-card {
+        width: 620px;
+    }
+
+    .booking-card-section {
+        width: 140px;
+    }
+}
+
+/* 320px and 628 */
+@media (min-width: 320px) and (max-width: 628px) {
+    .booking-card {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .booking-card form {
+        width: 100%;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .booking-card-section {
+        width: 100%;
+    }
+
+    .date {
+        width: 100%;
+    }
+
+    .booking-card-button {
+        width: 100%;
+        margin: 0px;
+        margin-top: 10px;
+    }
+}

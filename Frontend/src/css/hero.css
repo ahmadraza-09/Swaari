@@ -1,0 +1,20 @@
+.hero-section {
+    width: 100%;
+    height: fit-content;
+    /* border: 2px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+/* 320px and 628px */
+@media (min-width: 320px) and (max-width: 628px) {
+
+    .hero-section {
+        padding: 20px;
+    }
+
+}
