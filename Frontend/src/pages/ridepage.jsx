@@ -2,12 +2,13 @@ import React from 'react'
 import Header from '../components/header'
 import DesktopFooter from '../components/desktopfooter'
 import MobileFooter from '../components/mobilefooter'
+import Ride from '../components/ride'
 
 const RidePage = () => {
   return (
     <>
     {<Header/>}
-      This is Ride Page
+    {<Ride/>}
     {<DesktopFooter/>}
     {<MobileFooter/>}
     </>

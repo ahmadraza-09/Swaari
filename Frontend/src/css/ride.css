@@ -1,0 +1,191 @@
+.ride-section {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    color: #000;
+}
+
+.ride-section>h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.guide-container {
+    width: 100%;
+    height: fit-content;
+    padding: 0px 40px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.guide-box {
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.guide-box img {
+    width: 100px;
+}
+
+.parent-guide-box2 {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.parent-guide-box3 {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.parent-guide-box4 {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+/* Auto Road */
+.auto-road {
+    width: 5px;
+    height: 75%;
+    background-color: #ffb803;
+    position: absolute;
+    left: 50%;
+    top: 150px;
+}
+
+.stopis {
+    width: 20px;
+    height: 20px;
+    border-radius: 55px;
+    background-color: #ffb803;
+    position: absolute;
+    left: 49.4%;
+}
+
+.stopis1 {
+    top: 150px;
+}
+.stopis2 {
+    top: 450px;
+}
+.stopis3 {
+    top: 750px;
+}
+.stopis4 {
+    top: 1050px;
+}
+
+.auto-upper {
+    width: 50px;
+    position: absolute;
+    top: 140px;
+    left: 48.3%;
+    position: fixed;
+    transform: translateX(-0%);
+    transition: transform 0.2s ease-in-out;
+    z-index: 10;
+}
+
+/* Responsive Ride */
+/* 768px to 1100px */
+@media (min-width: 768px) and (max-width: 1100px) {
+    .guide-box {
+        width: 300px;
+        height: fit-content;
+    }
+
+    .guide-box img {
+        width: 50px;
+    }
+
+    .guide-box p {
+        font-size: 12px;
+    }
+
+    .auto-road {
+        top: 130px;
+    }
+
+    .stopis {
+        left: 49.1%;
+    }
+
+    .stopis1 {
+        top: 130px;
+    }
+    .stopis2 {
+        top: 350px;
+    }
+    .stopis3 {
+        top: 600px;
+    }
+    .stopis4 {
+        top: 840px;
+    }
+
+    .auto-upper {
+        left: 47.4%;
+    }
+}
+
+/* 320px to 768px */
+@media (min-width: 320px) and (max-width: 768px) {
+    
+    .guide-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        padding: 0px 40px;
+        padding-bottom: 40px;
+    }
+
+    .guide-box {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .guide-box img {
+        width: 100px;
+    }
+
+    .guide-box p {
+        font-size: 12px;
+    }
+
+    .auto-road {
+        display: none;
+    }
+
+    .stopis {
+        left: 49.1%;
+        display: none;
+    }
+
+    .auto-upper {
+        display: none;
+    }
+}
+
+/* 320px to 428px */
+@media (min-width: 320px) and (max-width: 428px) {
+    .ride-section>h2 {
+        font-size: 25px;
+    }
+
+    .guide-container {
+        padding: 0px 15px;
+        padding-bottom: 40px;
+    }
+
+
+}

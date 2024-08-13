@@ -1,12 +1,14 @@
 .header {
     width: 100%;
     height: 80px;
-    /* background-color: #000000; */
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 30px;
     /* border-bottom: 2px solid #000; */
+    position: fixed;
+    z-index: 99;
 }
 
 .logo {
@@ -80,6 +82,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    z-index: 2;
 }
 
 .language>i {
@@ -91,7 +94,7 @@
 .account {
     width: 100px;
     height: 40px;
-    /* border: 0.5px solid #000; */
+    /* border: 0.5px solid #000;   */
     border-radius: 55px;
     padding: 2px;
     padding-left: 10px;
@@ -148,6 +151,69 @@
 .account-dropdown ul hr {
     width: 100%;
     border-bottom: 1px solid #000;
+}
+
+/* Language Dialog Box */
+.language-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.language-dialog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.language-inputs .language-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.language-box input {
+    cursor: pointer;
+}
+
+.language-dialog-content h3 {
+    margin-bottom: 10px;
+}
+
+.language-dialog-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.language-dialog-content li {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.close-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
 
 /* Responsive */

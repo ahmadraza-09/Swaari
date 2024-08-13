@@ -1,8 +1,9 @@
 .profile-section {
     width: 100%;
     height: fit-content;
-    padding: 20px;
+    padding: 10px;
     padding-bottom: 80px;
+    padding-top: 100px;
 }
 
 .user-profile-card {
@@ -60,7 +61,13 @@
     justify-content: space-between;
     font-size: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 15px 0px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.mobile-menu:hover {
+    background-color: #e2e8f0;
 }
 
 .mobile-menu .left {
